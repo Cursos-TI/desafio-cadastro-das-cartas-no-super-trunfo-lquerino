@@ -18,7 +18,7 @@ int main(){
     float area1;
     float pib1;
 
-    char est2;
+    char estado3;
     char nome2[10];
     int cd2= 2; // A variável codigo1 está fixa em 2 pois trata-se da carta 2.
     int populacao2;
@@ -53,8 +53,8 @@ int main(){
     printf("\n\nDigite as informações sobre a Carta 2:\n\n");
 
     printf("Digite o Estado da carta:");
-    scanf("%c", &est2);
-
+    scanf("%s", &estado3);
+    
     printf("\nDigite o nome desta cidade:");
     scanf("%s", &nome2);
 
@@ -79,7 +79,7 @@ int main(){
     printf("Código: %c%d\n", estado1, cd1);
     printf("Nome da cidade: %s\n", nome1);
     printf("População: %d\n", populacao1);
-    printf("Área: %.3fm\n", area1);
+    printf("Área: %.2fm\n", area1);
     printf("PIB: R$ %.2f\n", pib1);
     printf("Número de pontos turísticos: %d\n", pturistico1);
 
@@ -89,11 +89,11 @@ int main(){
     printf("\n\nInformações sobre a carta:\n\n");
 
     printf("Carta: %d\n", cd2);
-    printf("Estado: %c\n", est2);
-    printf("Código: %c%d\n", est2, cd2);
+    printf("Estado: %c\n", estado3);
+    printf("Código: %c%d\n", estado3, cd2);
     printf("Nome da cidade: %s\n", nome2);
     printf("População: %d\n", populacao2);
-    printf("Área: %.3fm\n", area2);
+    printf("Área: %.2fm\n", area2);
     printf("PIB: R$ %.2f\n", pib2);
     printf("Número de pontos turísticos: %d\n", pturistico2);
 
