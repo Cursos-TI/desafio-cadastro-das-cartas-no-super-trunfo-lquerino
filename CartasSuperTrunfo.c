@@ -11,8 +11,8 @@ int main(){
     // Definição das variáveis
     
     char estado1;
-    char nome1[10];
-    int cd1=1; // A variável codigo1 está fixa em 1 pois trata-se da carta 1.
+    char* nome1[+10];
+    int cd1= 1; // A variável codigo1 está fixa em 1 pois trata-se da carta 1.
     int populacao1;
     int pturistico1;
     float area1;
