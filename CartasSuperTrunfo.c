@@ -13,16 +13,16 @@ int main(){
     char estado1;
     char nome1[10];
     int cd1= 1; // A variável codigo1 está fixa em 1 pois trata-se da carta 1.
-    int populacao1;
-    int pturistico1;
+    int* populacao1;
+    int* pturistico1;
     float area1;
     float pib1;
 
     char estado3;
     char nome2[10];
     int cd2= 2; // A variável codigo1 está fixa em 2 pois trata-se da carta 2.
-    int populacao2;
-    int pturistico2;
+    int* populacao2;
+    int* pturistico2;
     float area2;
     float pib2;
 
