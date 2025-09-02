@@ -44,7 +44,7 @@ int main(){
 
     printf("\n\nInformações sobre a carta:\n\n");
 
-    printf("Carta: %i\n", cd1);
+    printf("Carta: %d\n", cd1);
     printf("Estado: %c\n", estado1);
     printf("Código: %c%d\n", estado1, cd1);
     printf("Nome da cidade: %s\n", nome1);
