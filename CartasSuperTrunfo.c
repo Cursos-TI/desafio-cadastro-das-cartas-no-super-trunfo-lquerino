@@ -6,19 +6,24 @@
 // Siga os comentários para implementar cada parte do desafio.
 // Aluno: Leonardo Querino
 
-int main() {
+int main(){
+
     // Definição das variáveis
     
-    char estado1, codigo1=1,nome1; // A variável codigo1 está fixa em 1 pois trata-se da carta 1.
-    int populacao1, pturistico1;
-    float area1, pib1;
+    char estado1;
+    char nome1[10];
+    int cd1=1; // A variável codigo1 está fixa em 1 pois trata-se da carta 1.
+    int populacao1;
+    int pturistico1;
+    float area1;
+    float pib1;
 
     // Captura de dados das variáveis da Carta 1
 
     printf("\nDigite as informações sobre a Carta 1:\n\n");
 
     printf("Digite o Estado da carta:");
-    scanf("%s", &estado1);
+    scanf("%c", &estado1);
 
     printf("\nDigite o nome desta cidade:");
     scanf("%s", &nome1);
@@ -30,23 +35,23 @@ int main() {
     scanf("%f", &area1);
 
     printf("\nDigite o PIB em reais (R$):");
-    scanf("%.2f", &pib1);
+    scanf("%f", &pib1);
 
     printf("\nDigite a quantidade de ponto turístico desta cidade:");
     scanf("%d", &pturistico1);
 
     // Saida de dados da carta 1
 
-    printf("\n\nInformações sobre a carta 1:\n");
+    printf("\n\nInformações sobre a carta:\n\n");
 
-    printf("Carta: %d", codigo1);
-    printf("Estado: %c", estado1);
-    printf("Código: %s", codigo1, estado1);
-    printf("Nome da cidade: %s", nome1);
-    printf("População: %d", populacao1);
-    printf("Área: %f", area1);
-    printf("PIB: %2.f", pib1);
-    printf("Número de pontos turísticos: %s", pturistico1);
+    printf("Carta: %i\n", cd1);
+    printf("Estado: %c\n", estado1);
+    printf("Código: %c%d\n", estado1, cd1);
+    printf("Nome da cidade: %s\n", nome1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.3fm\n", area1);
+    printf("PIB: R$ %.2f\n", pib1);
+    printf("Número de pontos turísticos: %d\n", pturistico1);
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
