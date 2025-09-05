@@ -144,13 +144,31 @@ int main(){
 
     printf("\n\nBatalha das cartas: Lógica IF e ELSE\n\n");
 
+    printf("Comparativo População: 1 = %d hab x 2 = %d hab|| - ", pp1, pp2); 
+
     if (pp1 > pp2){
-        printf("Carta 1 (%s) venceu\n", nome1);
-        printf("População das cartas: 1 = %d x 2 = %d", pp1, pp2);
+        printf("Neste atributo a carta 1 (%s) venceu", nome1);
     }
     else{
-        printf("Carta 2 (%s) venceu\n", nome2);
-        printf("População das cartas: 1 = %d x 2 = %d", pp1, pp2);
+        printf("Neste atributo a carta 2 (%s) venceu", nome2);
+    }
+
+    printf("\nComparativo PIB: 1 = R$ %.2f x 2 = R$ %.2f || - ", pib1, pib2); 
+
+    if (pib1 > pib2){
+        printf("Neste atributo a carta 1 (%s) venceu", nome1);
+    }
+    else{
+        printf("Neste atributo a carta 2 (%s) venceu", nome2);
+    }
+
+    printf("\nComparativo Densidade Populacional: 1 = %.2f hab/km² x 2 = %.2f hab/km² || - ", dpp1, dpp2); 
+
+    if (dpp1 < dpp2){
+        printf("Neste atributo a carta 1 (%s) venceu", nome1);
+    }
+    else{
+        printf("Neste atributo a carta 2 (%s) venceu", nome2);
     }
     
     return 0;
