@@ -139,6 +139,19 @@ int main(){
     printf("Densidade Populacional: %d\n", dpp1 < dpp2);
     printf("PIB per Capita: %d\n", rendap1 > rendap2);
     printf("Super Poder: %d\n\n", spd1 > spd2);
+
+    // Logíca de comparação If e Else
+
+    printf("\n\nBatalha das cartas: Lógica IF e ELSE\n\n");
+
+    if (pp1 > pp2){
+        printf("Carta 1 (%s) venceu\n", nome1);
+        printf("População das cartas: 1 = %d x 2 = %d", pp1, pp2);
+    }
+    else{
+        printf("Carta 2 (%s) venceu\n", nome2);
+        printf("População das cartas: 1 = %d x 2 = %d", pp1, pp2);
+    }
     
     return 0;
 }
