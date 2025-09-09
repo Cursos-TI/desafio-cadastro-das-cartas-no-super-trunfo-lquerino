@@ -39,6 +39,7 @@ int main(){
     float area2;
 
     int opbt;
+    int opbt2;
 
     // Captura de dados das variáveis da Carta 1
 
@@ -143,14 +144,22 @@ int main(){
     printf("6. Renda per capita: \n");
     printf("7. Super Poder: \n");
 
-    printf("Selecione o atributo da batalha: ");
-    scanf("%d\n", &opbt);
+    printf("\nSelecione dois atributos para a batalha:\n");
 
-    printf("\n\n*** Exibição do Resultado: ***\n\n");
+    printf("Atributo 1: ");
+    scanf("%d", &opbt);
+
+    printf("Atributo 2: ");
+    scanf("%d", &opbt2);
+
+    opbt2 == opbt ? printf("Você escolheu o mesmo atributo da opção 1.") : printf("Atributos selecioados são válidos. . . . . . . . . . . Batalhando!");
+
+    printf("\n*** Exibição do Resultado: ***\n\n");
 
     printf("Disputa entre: %s x %s\n", nome1, nome2);
-    printf("Atributo selecionado para disputa: ", opbt);
-switch (opbt){
+
+    printf("Atributo 1 selecionados para disputa: ", opbt);
+    switch (opbt){
 case 1:
     printf("População\n");
     break;
@@ -176,7 +185,34 @@ default:
     printf("Opção selecionada foi inválida.\n");
     break;
 }
-    printf("Valores do atributo selecionado: ", opbt);
+    printf("Atributo 2 selecionados para disputa: ", opbt2);
+switch (opbt2){
+case 1:
+    printf("População\n");
+    break;
+case 2:
+    printf("Área\n");
+    break;
+case 3:
+    printf("População\n");
+    break;
+case 4:
+    printf("PIB\n");
+    break;
+case 5:
+    printf("Pontos turísticos\n");
+    break;
+case 6:
+    printf("Renda per capita\n");
+    break;
+case 7:
+    printf("Super Poder\n");
+    break;
+default:
+    printf("Opção selecionada foi inválida.\n");
+    break;
+}
+    printf("Valores do atributo 1 selecionado: ", opbt);
 switch (opbt){
 case 1:
     printf("%s = %d hab x %s = %d hab|| - ", nome1, pp1, nome2, pp2);
@@ -203,9 +239,112 @@ default:
     printf("Opção selecionada foi inválida.\n");
     break;
 }
-    printf("\nCarta vencedora: ", opbt);
+printf("\nValores do atributo 2 selecionado: ", opbt2);
+switch (opbt2){
+case 1:
+    printf("%s = %d hab x %s = %d hab|| - ", nome1, pp1, nome2, pp2);
+    break;
+case 2:
+    printf("%s = %.2f km² x %s = %.2f km² || - ", nome1, area1, nome2, area2);
+    break;
+case 3:
+    printf("%s = %.2f km² x %s = %.2f km² || - ", nome1, pib1, nome2, pib2);
+    break;
+case 4:
+    printf("%s = %d pontos x %s = %d pontos || - ", nome1, pturistico1, nome2, pturistico2);
+    break;
+case 5:
+    printf("%s = %.2f hab/km² x %s = %.2f hab/km² || - ", nome1, dpp1, nome2, dpp2);
+    break;
+case 6:
+    printf("%s = %.2f reais / hab x %s = %.2f reais / hab || - ", nome1, rendap1, nome2, rendap2);
+    break;
+case 7:
+    printf("%s = %.2f x %s = %.2f || - ", nome1, spd1, nome2, spd2);
+    break;
+default: 
+    printf("Opção selecionada foi inválida.\n");
+    break;
+}
+    printf("\n\n ** Batalha individual de atributos **: \n\n", opbt);
+
+    printf("\nCarta vencedora atributo 1: ", opbt);
 
     switch (opbt){
+    case 1:
+        if (pp1 > pp2){
+            printf("%s venceu", nome1);
+        }
+        else if (pp1 < pp2){ 
+            printf("%s venceu", nome2);
+        }
+        else{
+            printf("Houve um empate!");
+        }
+        break;
+    case 2:
+        if (area1 > area2){
+            printf("%s venceu", nome1);
+        }
+        else if (area1 < area2){ 
+            printf("%s venceu", nome2);
+        }
+        else{
+            printf("Houve um empate!");
+        }
+        break;
+    case 3:
+        if (pib1 > pib2){
+            printf("%s venceu", nome1);
+        }
+        else if (pib1 < pib2){ 
+            printf("%s venceu", nome2);
+        }
+        else{
+            printf("Houve um empate!");
+        }
+        break;
+    case 4:
+        if (pturistico1 > pturistico2){
+            printf("%s venceu", nome1);
+        }
+        else if (pturistico1 < pturistico2){ 
+            printf("%s venceu", nome2);
+        }
+        else{
+            printf("Houve um empate!");
+        }
+        break;
+    case 6:
+        if (rendap1 > rendap2){
+            printf("%s venceu", nome1);
+        }
+        else if (rendap1 < rendap2){ 
+            printf("%s venceu", nome2);
+        }
+        else{
+            printf("Houve um empate!");
+        }
+        break;
+    case 7:
+        if (spd1 > spd2){
+            printf("%s venceu", nome1);
+        }
+        else if (spd1 < spd2){ 
+            printf("%s venceu", nome2);
+        }
+        else{
+            printf("Houve um empate!");
+        }
+        break;
+    default:
+        printf("Opção selecionada foi inválida.");
+        break;
+    }
+
+    printf("\nCarta vencedora atributo 2: ", opbt2);
+
+    switch (opbt2){
     case 1:
         if (pp1 > pp2){
             printf("%s venceu", nome1);
